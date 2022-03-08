@@ -113,7 +113,7 @@ struct VanBinh {
 impl VanBinh {
     pub fn new() -> VanBinh {
         VanBinh {
-            orders_count: 0,
+            orders_count: 1,
             customers: Vec::new(),
         }
     }
@@ -201,6 +201,7 @@ fn main() {
 
         if order.items_count() == 0 {
             println!("Your order is empty!");
+            continue;
         }
 
         println!("This is order no. {}", van_binh.get_orders_count());
