@@ -82,7 +82,7 @@ impl Display for Order {
     fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result {
         write!(
             f,
-            "chicken: {}, tofu: {}, rice: {}, takeaway: {}",
+            "chicken: {}, tofu: {}, rice: {}, takeway: {}",
             self.dish_count(Dish::ThaiChicken),
             self.dish_count(Dish::Tofu),
             self.dish_count(Dish::FriedRice),
