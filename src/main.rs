@@ -99,8 +99,8 @@ struct Customer {
 impl Customer {
     fn new(name: String, favourite_order: Order) -> Customer {
         Customer {
-            name: name,
-            favourite_order: favourite_order,
+            name,
+            favourite_order,
         }
     }
 }
